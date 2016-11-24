@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>StepImp::validFwd</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__StepImp.html" title="StepImp">
+<link rel="prev" href="rev.html" title="StepImp::rev">
+<link rel="next" href="../ripple__Strand.html" title="Strand">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="rev.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__StepImp.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="../ripple__Strand.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__StepImp.validFwd"></a><a class="link" href="validFwd.html" title="StepImp::validFwd">StepImp::validFwd</a>
+</h4></div></div></div>
+<p>
+          <span class="emphasis"><em>Inherited from Step.</em></span> <a class="indexterm" name="idm466352297072"></a>
+Check that the
+          step can correctly execute in the forward direction.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__StepImp.validFwd.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StepImp.validFwd.synopsis"></a></span><a class="link" href="validFwd.html#rippled.ref.ripple__StepImp.validFwd.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="keyword">bool</span><span class="special">,</span> <span class="identifier">EitherAmount</span> <span class="special">&gt;</span>
+<span class="identifier">validFwd</span><span class="special">(</span>
+    <span class="identifier">PaymentSandbox</span><span class="special">&amp;</span> <span class="identifier">sb</span><span class="special">,</span>
+    <span class="identifier">ApplyView</span><span class="special">&amp;</span> <span class="identifier">afView</span><span class="special">,</span>
+    <span class="identifier">EitherAmount</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">in</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__StepImp.validFwd.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StepImp.validFwd.description"></a></span><a class="link" href="validFwd.html#rippled.ref.ripple__StepImp.validFwd.description">Description</a>
+        </h6>
+<h6>
+<a name="rippled.ref.ripple__StepImp.validFwd.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StepImp.validFwd.parameters"></a></span><a class="link" href="validFwd.html#rippled.ref.ripple__StepImp.validFwd.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">sb</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    view with the strands state of balances and offers
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">afView</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    view the the state of balances before the strand runs this determines
+                    if an offer becomes unfunded or is found unfunded
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">in</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    requested step input
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="rippled.ref.ripple__StepImp.validFwd.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StepImp.validFwd.return_value"></a></span><a class="link" href="validFwd.html#rippled.ref.ripple__StepImp.validFwd.return_value">Return
+          Value</a>
+        </h6>
+<p>
+          first element is true if step is valid, second element is out amount
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="rev.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__StepImp.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="../ripple__Strand.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

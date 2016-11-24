@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>flow</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__StrandResult/ter.html" title="StrandResult::ter">
+<link rel="next" href="ripple__flow/overload1.html" title="flow (1 of 3 overloads)">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__StrandResult/ter.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__flow/overload1.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__flow"></a><a class="link" href="ripple__flow.html" title="flow">flow</a>
+</h3></div></div></div>
+<p>
+        <a class="indexterm" name="idm192061116480"></a>
+Make a payment from the src account to the dst account.
+      </p>
+<pre class="programlisting"><span class="identifier">path</span><span class="special">::</span><span class="identifier">RippleCalc</span><span class="special">::</span><span class="identifier">Output</span>
+<a class="link" href="ripple__flow/overload1.html" title="flow (1 of 3 overloads)">flow</a><span class="special">(</span>
+    <span class="identifier">PaymentSandbox</span><span class="special">&amp;</span> <span class="identifier">view</span><span class="special">,</span>
+    <span class="identifier">STAmount</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">deliver</span><span class="special">,</span>
+    <span class="identifier">AccountID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">src</span><span class="special">,</span>
+    <span class="identifier">AccountID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">dst</span><span class="special">,</span>
+    <span class="identifier">STPathSet</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">paths</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">defaultPaths</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">partialPayment</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">ownerPaysTransferFee</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">offerCrossing</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">Quality</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">limitQuality</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">STAmount</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">sendMax</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">,</span>
+    <span class="identifier">path</span><span class="special">::</span><span class="identifier">detail</span><span class="special">::</span><span class="identifier">FlowDebugInfo</span><span class="special">*</span> <span class="identifier">flowDebugInfo</span> <span class="special">=</span> <span class="keyword">nullptr</span><span class="special">);</span>
+
+<span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">TInAmt</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">TOutAmt</span><span class="special">&gt;</span>
+<span class="identifier">StrandResult</span><span class="special">&lt;</span> <span class="identifier">TInAmt</span><span class="special">,</span> <span class="identifier">TOutAmt</span> <span class="special">&gt;</span>
+<a class="link" href="ripple__flow/overload2.html" title="flow (2 of 3 overloads)">flow</a><span class="special">(</span>
+    <span class="identifier">PaymentSandbox</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">baseView</span><span class="special">,</span>
+    <span class="identifier">Strand</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strand</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">TInAmt</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">maxIn</span><span class="special">,</span>
+    <span class="identifier">TOutAmt</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">out</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">);</span>
+
+<span class="keyword">template</span><span class="special">&lt;</span>
+    <span class="keyword">class</span> <span class="identifier">TInAmt</span><span class="special">,</span>
+    <span class="keyword">class</span> <span class="identifier">TOutAmt</span><span class="special">&gt;</span>
+<span class="identifier">FlowResult</span><span class="special">&lt;</span> <span class="identifier">TInAmt</span><span class="special">,</span> <span class="identifier">TOutAmt</span> <span class="special">&gt;</span>
+<a class="link" href="ripple__flow/overload3.html" title="flow (3 of 3 overloads)">flow</a><span class="special">(</span>
+    <span class="identifier">PaymentSandbox</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">baseView</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">Strand</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strands</span><span class="special">,</span>
+    <span class="identifier">TOutAmt</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">outReq</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">partialPayment</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">offerCrossing</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">Quality</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">limitQuality</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">STAmount</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">sendMaxST</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j</span><span class="special">,</span>
+    <span class="identifier">path</span><span class="special">::</span><span class="identifier">detail</span><span class="special">::</span><span class="identifier">FlowDebugInfo</span><span class="special">*</span> <span class="identifier">flowDebugInfo</span> <span class="special">=</span> <span class="keyword">nullptr</span><span class="special">);</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__flow.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__flow.header"></a></span><a class="link" href="ripple__flow.html#rippled.ref.ripple__flow.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">paths</span><span class="special">/</span><span class="identifier">Flow</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__StrandResult/ter.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__flow/overload1.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

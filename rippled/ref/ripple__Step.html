@@ -1,0 +1,338 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Step</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__CreateOffer/takerCross.html" title="CreateOffer::takerCross">
+<link rel="next" href="ripple__Step/bookStepBook.html" title="Step::bookStepBook">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__CreateOffer/takerCross.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Step/bookStepBook.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__Step"></a><a class="link" href="ripple__Step.html" title="Step">Step</a>
+</h3></div></div></div>
+<p>
+        A step in a payment path.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__Step.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Step.synopsis"></a></span><a class="link" href="ripple__Step.html#rippled.ref.ripple__Step.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">class</span> <span class="identifier">Step</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__Step.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Step.member_functions"></a></span><a class="link" href="ripple__Step.html#rippled.ref.ripple__Step.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/bookStepBook.html" title="Step::bookStepBook"><span class="bold"><strong>bookStepBook</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  If this step is a BookStep, return the book.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/cachedIn.html" title="Step::cachedIn"><span class="bold"><strong>cachedIn</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Amount of currency computed coming into the Step the last time
+                  the step ran in reverse.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/cachedOut.html" title="Step::cachedOut"><span class="bold"><strong>cachedOut</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Amount of currency computed coming out of the Step the last time
+                  the step ran in reverse.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/directStepSrcAcct.html" title="Step::directStepSrcAcct"><span class="bold"><strong>directStepSrcAcct</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  If this step is DirectStepI (IOU-&gt;IOU direct step), return the
+                  src account.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/dry.html" title="Step::dry"><span class="bold"><strong>dry</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Check if amount is zero.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/equalIn.html" title="Step::equalIn"><span class="bold"><strong>equalIn</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Return true if In of lhs == In of rhs.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/equalOut.html" title="Step::equalOut"><span class="bold"><strong>equalOut</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Return true if Out of lhs == Out of rhs.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/fwd.html" title="Step::fwd"><span class="bold"><strong>fwd</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Find the amount we get out of the step given the input subject
+                  to liquidity limits.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/lineQualityIn.html" title="Step::lineQualityIn"><span class="bold"><strong>lineQualityIn</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  If this step is a DirectStepI, return the quality in of the dst
+                  account.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/qualityUpperBound.html" title="Step::qualityUpperBound"><span class="bold"><strong>qualityUpperBound</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Find an upper bound of quality for the step.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/redeems.html" title="Step::redeems"><span class="bold"><strong>redeems</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  If this step is a DirectStepI and the src redeems to the dst, return
+                  true, otherwise return false.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/rev.html" title="Step::rev"><span class="bold"><strong>rev</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Find the amount we need to put into the step to get the requested
+                  out subject to liquidity limits.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/validFwd.html" title="Step::validFwd"><span class="bold"><strong>validFwd</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Check that the step can correctly execute in the forward direction.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/_Step.html" title="Step::~Step"><span class="bold"><strong>~Step</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Step destructor.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Step.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Step.friends"></a></span><a class="link" href="ripple__Step.html#rippled.ref.ripple__Step.friends">Friends</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/operator_not__eq_.html" title="Step::operator!="><span class="bold"><strong>operator!=</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Return true if lhs != rhs.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/operator_lt__lt_.html" title="Step::operator&lt;&lt;"><span class="bold"><strong>operator&lt;&lt;</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Streaming operator for a Step.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__Step/operator_eq__eq_.html" title="Step::operator=="><span class="bold"><strong>operator==</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Return true if lhs == rhs.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__Step.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Step.description"></a></span><a class="link" href="ripple__Step.html#rippled.ref.ripple__Step.description">Description</a>
+      </h5>
+<p>
+        There are five concrete step classes: DirectStepI is an IOU step between
+        accounts BookStepII is an IOU/IOU offer book BookStepIX is an IOU/XRP offer
+        book BookStepXI is an XRP/IOU offer book XRPEndpointStep is the source or
+        destination account for XRP
+      </p>
+<p>
+        Amounts may be transformed through a step in either the forward or the reverse
+        direction. In the forward direction, the function <code class="computeroutput"><span class="identifier">fwd</span></code>
+        is used to find the amount the step would output given an input amount. In
+        the reverse direction, the function <code class="computeroutput"><span class="identifier">rev</span></code>
+        is used to find the amount of input needed to produce the desired output.
+      </p>
+<p>
+        Amounts are always transformed using liquidity with the same quality (quality
+        is the amount out/amount in). For example, a BookStep may use multiple offers
+        when executing <code class="computeroutput"><span class="identifier">fwd</span></code> or <code class="computeroutput"><span class="identifier">rev</span></code>, but all those offers will be from
+        the same quality directory.
+      </p>
+<p>
+        A step may not have enough liquidity to transform the entire requested amount.
+        Both <code class="computeroutput"><span class="identifier">fwd</span></code> and <code class="computeroutput"><span class="identifier">rev</span></code> return a pair of amounts (one for input
+        amount, one for output amount) that show how much of the requested amount
+        the step was actually able to use.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__Step.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__Step.header"></a></span><a class="link" href="ripple__Step.html#rippled.ref.ripple__Step.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">paths</span><span class="special">/</span><span class="identifier">impl</span><span class="special">/</span><span class="identifier">Steps</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__CreateOffer/takerCross.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__Step/bookStepBook.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

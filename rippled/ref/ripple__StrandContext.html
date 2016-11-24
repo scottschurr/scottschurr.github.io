@@ -1,0 +1,295 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>StrandContext</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="ripple__Step/_Step.html" title="Step::~Step">
+<link rel="next" href="ripple__StrandContext/StrandContext.html" title="StrandContext::StrandContext">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Step/_Step.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__StrandContext/StrandContext.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__StrandContext"></a><a class="link" href="ripple__StrandContext.html" title="StrandContext">StrandContext</a>
+</h3></div></div></div>
+<p>
+        Context needed to build Strand Steps and for error checking.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__StrandContext.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__StrandContext.synopsis"></a></span><a class="link" href="ripple__StrandContext.html#rippled.ref.ripple__StrandContext.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">struct</span> <span class="identifier">StrandContext</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__StrandContext.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__StrandContext.member_functions"></a></span><a class="link" href="ripple__StrandContext.html#rippled.ref.ripple__StrandContext.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/StrandContext.html" title="StrandContext::StrandContext"><span class="bold"><strong>StrandContext</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  StrandContext constructor.
+                </p>
+              </td>
+</tr></tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__StrandContext.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__StrandContext.data_members"></a></span><a class="link" href="ripple__StrandContext.html#rippled.ref.ripple__StrandContext.data_members">Data
+        Members</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/isDefaultPath.html" title="StrandContext::isDefaultPath"><span class="bold"><strong>isDefaultPath</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  true if Strand is default path
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/isFirst.html" title="StrandContext::isFirst"><span class="bold"><strong>isFirst</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  true if Step is first in Strand
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/isLast.html" title="StrandContext::isLast"><span class="bold"><strong>isLast</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  true if Step is last in Strand
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/j.html" title="StrandContext::j"><span class="bold"><strong>j</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Journal for logging.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/limitQuality.html" title="StrandContext::limitQuality"><span class="bold"><strong>limitQuality</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Worst accepted quality.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/offerCrossing.html" title="StrandContext::offerCrossing"><span class="bold"><strong>offerCrossing</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  true if offer crossing, not payment
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/ownerPaysTransferFee.html" title="StrandContext::ownerPaysTransferFee"><span class="bold"><strong>ownerPaysTransferFee</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  true if owner, not sender, pays fee
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/prevStep.html" title="StrandContext::prevStep"><span class="bold"><strong>prevStep</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  The previous step in the strand.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/seenBookOuts.html" title="StrandContext::seenBookOuts"><span class="bold"><strong>seenBookOuts</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  A strand may not include an offer that output the same issue more
+                  than once.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/seenDirectIssues.html" title="StrandContext::seenDirectIssues"><span class="bold"><strong>seenDirectIssues</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  A strand may not include the same account node more than once in
+                  the same currency.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/strandDeliver.html" title="StrandContext::strandDeliver"><span class="bold"><strong>strandDeliver</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Issue strand delivers.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/strandDst.html" title="StrandContext::strandDst"><span class="bold"><strong>strandDst</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Strand destination account.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/strandSize.html" title="StrandContext::strandSize"><span class="bold"><strong>strandSize</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Length of Strand.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/strandSrc.html" title="StrandContext::strandSrc"><span class="bold"><strong>strandSrc</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Strand source account.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__StrandContext/view.html" title="StrandContext::view"><span class="bold"><strong>view</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Current ReadView.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__StrandContext.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__StrandContext.description"></a></span><a class="link" href="ripple__StrandContext.html#rippled.ref.ripple__StrandContext.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__StrandContext.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__StrandContext.header"></a></span><a class="link" href="ripple__StrandContext.html#rippled.ref.ripple__StrandContext.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">app</span><span class="special">/</span><span class="identifier">paths</span><span class="special">/</span><span class="identifier">impl</span><span class="special">/</span><span class="identifier">Steps</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="ripple__Step/_Step.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__StrandContext/StrandContext.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

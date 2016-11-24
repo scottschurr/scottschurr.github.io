@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>StrandContext::StrandContext</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__StrandContext.html" title="StrandContext">
+<link rel="prev" href="../ripple__StrandContext.html" title="StrandContext">
+<link rel="next" href="isDefaultPath.html" title="StrandContext::isDefaultPath">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="../ripple__StrandContext.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__StrandContext.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="isDefaultPath.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__StrandContext.StrandContext"></a><a class="link" href="StrandContext.html" title="StrandContext::StrandContext">StrandContext::StrandContext</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idm192061573392"></a>
+<a class="link" href="../ripple__StrandContext.html" title="StrandContext"><code class="computeroutput"><span class="identifier">StrandContext</span></code></a> constructor.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__StrandContext.StrandContext.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StrandContext.StrandContext.synopsis"></a></span><a class="link" href="StrandContext.html#rippled.ref.ripple__StrandContext.StrandContext.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="identifier">StrandContext</span><span class="special">(</span>
+    <span class="identifier">ReadView</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">view_</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">unique_ptr</span><span class="special">&lt;</span> <span class="identifier">Step</span> <span class="special">&gt;&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strand_</span><span class="special">,</span>
+    <span class="identifier">AccountID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strandSrc_</span><span class="special">,</span>
+    <span class="identifier">AccountID</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strandDst_</span><span class="special">,</span>
+    <span class="identifier">Issue</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">strandDeliver_</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">optional</span><span class="special">&lt;</span> <span class="identifier">Quality</span> <span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="identifier">limitQuality_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">isLast_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">ownerPaysTransferFee_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">offerCrossing_</span><span class="special">,</span>
+    <span class="keyword">bool</span> <span class="identifier">isDefaultPath_</span><span class="special">,</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">array</span><span class="special">&lt;</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">container</span><span class="special">::</span><span class="identifier">flat_set</span><span class="special">&lt;</span> <span class="identifier">Issue</span> <span class="special">&gt;,</span> <span class="number">2</span> <span class="special">&gt;&amp;</span> <span class="identifier">seenDirectIssues_</span><span class="special">,</span>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">container</span><span class="special">::</span><span class="identifier">flat_set</span><span class="special">&lt;</span> <span class="identifier">Issue</span> <span class="special">&gt;&amp;</span> <span class="identifier">seenBookOuts_</span><span class="special">,</span>
+    <span class="identifier">beast</span><span class="special">::</span><span class="identifier">Journal</span> <span class="identifier">j_</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__StrandContext.StrandContext.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__StrandContext.StrandContext.description"></a></span><a class="link" href="StrandContext.html#rippled.ref.ripple__StrandContext.StrandContext.description">Description</a>
+        </h6>
+<p>
+          Journal for logging
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../ripple__StrandContext.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__StrandContext.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="isDefaultPath.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
