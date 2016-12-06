@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>DeadlineTimer::setRecurringExpiration</title>
+<link rel="stylesheet" href="../../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../../index.html" title="rippled">
+<link rel="up" href="../ripple__DeadlineTimer.html" title="DeadlineTimer">
+<link rel="prev" href="setExpiration.html" title="DeadlineTimer::setExpiration">
+<link rel="next" href="time_point.html" title="DeadlineTimer::time_point">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="setExpiration.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__DeadlineTimer.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="time_point.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration"></a><a class="link" href="setRecurringExpiration.html" title="DeadlineTimer::setRecurringExpiration">DeadlineTimer::setRecurringExpiration</a>
+</h4></div></div></div>
+<p>
+          <a class="indexterm" name="idm425238019088"></a>
+Set the timer to go off repeatedly with
+          the specified period.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.h0"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.synopsis"></a></span><a class="link" href="setRecurringExpiration.html#rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.synopsis">Synopsis</a>
+        </h6>
+<pre class="programlisting"><span class="keyword">void</span>
+<span class="identifier">setRecurringExpiration</span><span class="special">(</span>
+    <span class="identifier">duration</span> <span class="identifier">interval</span><span class="special">);</span>
+</pre>
+<h6>
+<a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.h1"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.description"></a></span><a class="link" href="setRecurringExpiration.html#rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.description">Description</a>
+        </h6>
+<p>
+          If the timer is already active, this will reset it.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.h2"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.remarks"></a></span><a class="link" href="setRecurringExpiration.html#rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.remarks">Remarks</a>
+        </h6>
+<p>
+          If the timer is already active, the old one might go off before this function
+          returns.
+        </p>
+<h6>
+<a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.h3"></a>
+          <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.parameters"></a></span><a class="link" href="setRecurringExpiration.html#rippled.ref.ripple__DeadlineTimer.setRecurringExpiration.parameters">Parameters</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Name
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    <code class="computeroutput"><span class="identifier">interval</span></code>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    duration until the timer will send a notification. This must
+                    be greater than zero.
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="setExpiration.html"><img src="../../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ripple__DeadlineTimer.html"><img src="../../../images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../images/home.png" alt="Home"></a><a accesskey="n" href="time_point.html"><img src="../../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

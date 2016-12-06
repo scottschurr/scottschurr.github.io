@@ -1,0 +1,235 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>DeadlineTimer</title>
+<link rel="stylesheet" href="../../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="../../index.html" title="rippled">
+<link rel="up" href="../ref.html" title="Reference">
+<link rel="prev" href="../ref.html" title="Reference">
+<link rel="next" href="ripple__DeadlineTimer/DeadlineTimer.html" title="DeadlineTimer::DeadlineTimer">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="spirit-nav">
+<a accesskey="p" href="../ref.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DeadlineTimer/DeadlineTimer.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="rippled.ref.ripple__DeadlineTimer"></a><a class="link" href="ripple__DeadlineTimer.html" title="DeadlineTimer">DeadlineTimer</a>
+</h3></div></div></div>
+<p>
+        Provides periodic or one time notifications at a specified time interval.
+      </p>
+<h5>
+<a name="rippled.ref.ripple__DeadlineTimer.h0"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.synopsis"></a></span><a class="link" href="ripple__DeadlineTimer.html#rippled.ref.ripple__DeadlineTimer.synopsis">Synopsis</a>
+      </h5>
+<pre class="programlisting"><span class="keyword">class</span> <span class="identifier">DeadlineTimer</span> <span class="special">:</span>
+    <span class="keyword">public</span> <span class="identifier">beast</span><span class="special">::</span><span class="identifier">List</span><span class="special">::</span><span class="identifier">Node</span><span class="special">&lt;</span> <span class="identifier">DeadlineTimer</span> <span class="special">&gt;</span>
+</pre>
+<h5>
+<a name="rippled.ref.ripple__DeadlineTimer.h1"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.types"></a></span><a class="link" href="ripple__DeadlineTimer.html#rippled.ref.ripple__DeadlineTimer.types">Types</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/clock.html" title="DeadlineTimer::clock"><span class="bold"><strong>clock</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  DeadlineTimer clock.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/duration.html" title="DeadlineTimer::duration"><span class="bold"><strong>duration</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  DeadlineTimer duration.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer__Listener.html" title="DeadlineTimer::Listener"><span class="bold"><strong>Listener</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Listener for a deadline timer.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/time_point.html" title="DeadlineTimer::time_point"><span class="bold"><strong>time_point</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  DeadlineTimer time_point.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__DeadlineTimer.h2"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.member_functions"></a></span><a class="link" href="ripple__DeadlineTimer.html#rippled.ref.ripple__DeadlineTimer.member_functions">Member
+        Functions</a>
+      </h5>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                <p>
+                  Name
+                </p>
+              </th>
+<th>
+                <p>
+                  Description
+                </p>
+              </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/DeadlineTimer.html" title="DeadlineTimer::DeadlineTimer"><span class="bold"><strong>DeadlineTimer</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Create a deadline timer with the specified listener attached.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/cancel.html" title="DeadlineTimer::cancel"><span class="bold"><strong>cancel</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Cancel all notifications.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/operator_not__eq_.html" title="DeadlineTimer::operator!="><span class="bold"><strong>operator!=</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Inequality comparison.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/operator_eq__eq_.html" title="DeadlineTimer::operator=="><span class="bold"><strong>operator==</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Equality comparison.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/setExpiration.html" title="DeadlineTimer::setExpiration"><span class="bold"><strong>setExpiration</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Set the timer to go off once in the future.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/setRecurringExpiration.html" title="DeadlineTimer::setRecurringExpiration"><span class="bold"><strong>setRecurringExpiration</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Set the timer to go off repeatedly with the specified period.
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <a class="link" href="ripple__DeadlineTimer/_DeadlineTimer.html" title="DeadlineTimer::~DeadlineTimer"><span class="bold"><strong>~DeadlineTimer</strong></span></a>
+                </p>
+              </td>
+<td>
+                <p>
+                  Destructor.
+                </p>
+              </td>
+</tr>
+</tbody>
+</table></div>
+<h5>
+<a name="rippled.ref.ripple__DeadlineTimer.h3"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.description"></a></span><a class="link" href="ripple__DeadlineTimer.html#rippled.ref.ripple__DeadlineTimer.description">Description</a>
+      </h5>
+<h5>
+<a name="rippled.ref.ripple__DeadlineTimer.h4"></a>
+        <span class="phrase"><a name="rippled.ref.ripple__DeadlineTimer.header"></a></span><a class="link" href="ripple__DeadlineTimer.html#rippled.ref.ripple__DeadlineTimer.header">Header</a>
+      </h5>
+<p>
+        <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">ripple</span><span class="special">/</span><span class="identifier">core</span><span class="special">/</span><span class="identifier">DeadlineTimer</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2012-2016 Ripple Labs Inc.<p>
+        Distributed under the ISC License
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../ref.html"><img src="../../images/prev.png" alt="Prev"></a><a accesskey="u" href="../ref.html"><img src="../../images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../images/home.png" alt="Home"></a><a accesskey="n" href="ripple__DeadlineTimer/DeadlineTimer.html"><img src="../../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>
